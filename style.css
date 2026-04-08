@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 15px/1.8 monospace;
+  text-shadow: 0 0 5px #000, 0 0 10px #000;
+  color: white;
+  background: url("background.png") center / cover no-repeat fixed;
+}
+
+
+h2:hover {
+  animation: glitch .3s steps(1) infinite;
+}
+
+@keyframes glitch {
+  33% { color: #f03; transform: translateX(-2px); }
+  66% { color: #05f; transform: skewX(-3deg); }
+}
+
+
+/* linky  */
+a {
+  color: rgb(255,64,64);
+  text-decoration: underline;
+}
+a:hover {
+color: blue;
+}
+
+/* code :D */
+code {
+  color: #0f9;
+  padding: .1em .4em;
+}
+
+img {
+  max-width: 100%;
+  margin: 1.5em 0;
+  opacity: .85;
+  filter: grayscale(70%);
+}
+
+
